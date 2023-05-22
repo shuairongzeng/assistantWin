@@ -30,16 +30,18 @@
         {
             toolStripContainer = new ToolStripContainer();
             statusLabel = new Label();
+            outputLabel = new Label();
             toolStrip1 = new ToolStrip();
             backButton = new ToolStripButton();
             forwardButton = new ToolStripButton();
             urlTextBox = new ToolStripTextBox();
             goButton = new ToolStripButton();
-            outputLabel = new Label();
             menuStrip1 = new MenuStrip();
             开始ToolStripMenuItem = new ToolStripMenuItem();
             ShowDevToolsMenuItem = new ToolStripMenuItem();
             ExitMenuItem = new ToolStripMenuItem();
+            label1 = new Label();
+            label2 = new Label();
             toolStripContainer.ContentPanel.SuspendLayout();
             toolStripContainer.TopToolStripPanel.SuspendLayout();
             toolStripContainer.SuspendLayout();
@@ -52,6 +54,8 @@
             // 
             // toolStripContainer.ContentPanel
             // 
+            toolStripContainer.ContentPanel.Controls.Add(label2);
+            toolStripContainer.ContentPanel.Controls.Add(label1);
             toolStripContainer.ContentPanel.Controls.Add(statusLabel);
             toolStripContainer.ContentPanel.Controls.Add(outputLabel);
             toolStripContainer.ContentPanel.Size = new Size(800, 400);
@@ -75,6 +79,16 @@
             statusLabel.Size = new Size(43, 17);
             statusLabel.TabIndex = 1;
             statusLabel.Text = "label1";
+            // 
+            // outputLabel
+            // 
+            outputLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            outputLabel.AutoSize = true;
+            outputLabel.Location = new Point(-7, 387);
+            outputLabel.Name = "outputLabel";
+            outputLabel.Size = new Size(43, 17);
+            outputLabel.TabIndex = 0;
+            outputLabel.Text = "label1";
             // 
             // toolStrip1
             // 
@@ -119,16 +133,6 @@
             goButton.Text = "Go";
             goButton.Click += goButton_Click;
             // 
-            // outputLabel
-            // 
-            outputLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            outputLabel.AutoSize = true;
-            outputLabel.Location = new Point(-7, 387);
-            outputLabel.Name = "outputLabel";
-            outputLabel.Size = new Size(43, 17);
-            outputLabel.TabIndex = 0;
-            outputLabel.Text = "label1";
-            // 
             // menuStrip1
             // 
             menuStrip1.Items.AddRange(new ToolStripItem[] { 开始ToolStripMenuItem });
@@ -158,6 +162,24 @@
             ExitMenuItem.Size = new Size(160, 22);
             ExitMenuItem.Text = "退出";
             ExitMenuItem.Click += ExitMenuItem_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(372, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 17);
+            label1.TabIndex = 2;
+            label1.Text = "label1";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(441, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(43, 17);
+            label2.TabIndex = 3;
+            label2.Text = "label2";
             // 
             // Form1
             // 
@@ -198,5 +220,7 @@
         private ToolStripMenuItem 开始ToolStripMenuItem;
         private ToolStripMenuItem ShowDevToolsMenuItem;
         private ToolStripMenuItem ExitMenuItem;
+        private Label label2;
+        private Label label1;
     }
 }
