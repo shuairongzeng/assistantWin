@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContextMenu xmlns="urn:schemas-microsoft-com:registry:ContextMenu">
+	<Shell>
+		<CopyFileCommand>
+			<CommandId>YourApp.CopyFileCommand</CommandId>
+			<Label>Copy File</Label>
+			<Icon>Path\to\your\icon.ico</Icon>
+			<CommandFlags>EnableOnMultiSelect</CommandFlags>
+			<CommandParameters>/filePath "%1"</CommandParameters>
+			<Command>"Path\to\your\app.exe"</Command>
+		</CopyFileCommand>
+	</Shell>
+</ContextMenu>

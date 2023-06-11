@@ -67,7 +67,7 @@ namespace assistantWin
             CefSharp.Cef.Initialize(setting);
 
 
-            browser = new ChromiumWebBrowser("www.baidu.com")
+            browser = new ChromiumWebBrowser("https://weibo.com/newlogin?tabtype=weibo&gid=102803&openLoginLayer=0&url=")
             {
                 Dock = DockStyle.Fill,
             };
